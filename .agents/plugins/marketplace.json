@@ -1,4 +1,6 @@
 {
+  "name": "dartvision-super-plugin",
+  "source": "github:larsdahlmann2-stack/dartvision-super-plugin",
   "plugins": [
     {
       "name": "dartvision-filesystem",
