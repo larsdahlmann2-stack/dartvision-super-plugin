@@ -4,7 +4,7 @@
       "command": "node",
       "args": ["src/filesystem/index.js"],
       "env": {
-        "ALLOWED_DIRECTORIES": ["C:\\Users\\larsd\\Documents\\Codex\\2026-09-08\\files-pasted-by-the-user-entwicklungsauftrag"]
+        "ALLOWED_DIRECTORIES": ["C:\\"]
       }
     },
     "dartvision-terminal": {
