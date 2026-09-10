@@ -42,6 +42,10 @@
     "dartvision-live-docs": {
       "command": "node",
       "args": ["src/docs/index.js"]
+    },
+    "dartvision-prompts": {
+      "command": "node",
+      "args": ["src/prompts/index.js"]
     }
   }
 }
