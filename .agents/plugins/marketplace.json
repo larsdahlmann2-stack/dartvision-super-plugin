@@ -1,0 +1,48 @@
+{
+  "plugins": [
+    {
+      "name": "dartvision-filesystem",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/filesystem"
+    },
+    {
+      "name": "dartvision-terminal",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/terminal"
+    },
+    {
+      "name": "dartvision-sequential-thinking",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/sequentialthinking"
+    },
+    {
+      "name": "dartvision-network-fetch",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/fetch"
+    },
+    {
+      "name": "dartvision-codebase-memory",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/codebase-memory"
+    },
+    {
+      "name": "dartvision-visual-verify",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/visualverify"
+    },
+    {
+      "name": "dartvision-error-triage",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/errortriage"
+    },
+    {
+      "name": "dartvision-self-extend",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/installer"
+    },
+    {
+      "name": "dartvision-git-control",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/git"
+    },
+    {
+      "name": "dartvision-live-docs",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/docs"
+    },
+    {
+      "name": "dartvision-prompts",
+      "source": "github:larsdahlmann2-stack/dartvision-super-plugin/src/prompts"
+    }
+  ]
+}
