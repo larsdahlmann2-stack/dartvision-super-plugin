@@ -34,6 +34,14 @@
     "dartvision-self-extend": {
       "command": "node",
       "args": ["src/installer/plugin-installer.js"]
+    },
+    "dartvision-git-control": {
+      "command": "node",
+      "args": ["src/git/index.js"]
+    },
+    "dartvision-live-docs": {
+      "command": "node",
+      "args": ["src/docs/index.js"]
     }
   }
 }
