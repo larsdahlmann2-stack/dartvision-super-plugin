@@ -22,6 +22,14 @@
     "dartvision-codebase-memory": {
       "command": "node",
       "args": ["src/codebase-memory/index.js"]
+    },
+    "dartvision-visual-verify": {
+      "command": "node",
+      "args": ["src/visualverify/index.js"]
+    },
+    "dartvision-error-triage": {
+      "command": "node",
+      "args": ["src/errortriage/index.js"]
     }
   }
 }
