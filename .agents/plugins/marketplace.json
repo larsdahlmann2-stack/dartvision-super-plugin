@@ -1,51 +1,62 @@
 {
-  "mcpServers": {
-    "dartvision-filesystem": {
+  "plugins": [
+    {
+      "name": "dartvision-filesystem",
       "command": "node",
       "args": ["src/filesystem/index.js"],
       "env": {
         "ALLOWED_DIRECTORIES": ["C:\\"]
       }
     },
-    "dartvision-terminal": {
+    {
+      "name": "dartvision-terminal",
       "command": "powershell.exe",
       "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "src/terminal/run.ps1"]
     },
-    "dartvision-sequential-thinking": {
+    {
+      "name": "dartvision-sequential-thinking",
       "command": "node",
       "args": ["src/sequentialthinking/index.js"]
     },
-    "dartvision-network-fetch": {
+    {
+      "name": "dartvision-network-fetch",
       "command": "node",
       "args": ["src/fetch/index.js"]
     },
-    "dartvision-codebase-memory": {
+    {
+      "name": "dartvision-codebase-memory",
       "command": "node",
       "args": ["src/codebase-memory/index.js"]
     },
-    "dartvision-visual-verify": {
+    {
+      "name": "dartvision-visual-verify",
       "command": "node",
       "args": ["src/visualverify/index.js"]
     },
-    "dartvision-error-triage": {
+    {
+      "name": "dartvision-error-triage",
       "command": "node",
       "args": ["src/errortriage/index.js"]
     },
-    "dartvision-self-extend": {
+    {
+      "name": "dartvision-self-extend",
       "command": "node",
       "args": ["src/installer/plugin-installer.js"]
     },
-    "dartvision-git-control": {
+    {
+      "name": "dartvision-git-control",
       "command": "node",
       "args": ["src/git/index.js"]
     },
-    "dartvision-live-docs": {
+    {
+      "name": "dartvision-live-docs",
       "command": "node",
       "args": ["src/docs/index.js"]
     },
-    "dartvision-prompts": {
+    {
+      "name": "dartvision-prompts",
       "command": "node",
       "args": ["src/prompts/index.js"]
     }
-  }
+  ]
 }
