@@ -31,7 +31,7 @@ process.stdin.on('data', (data) => {
             process.stdout.write(JSON.stringify({
                 result: {
                     prompts: [
-                        { name: BEFEHL_1_NAME, description: "Startet das Hauptprojekt." },
+                        { name: BEFEHL_1_NAME, description: "Starte Entwicklungsmodus" },
                         { name: BEFEHL_2_NAME, description: "Startet Befehl 2." },
                         { name: BEFEHL_3_NAME, description: "Startet Befehl 3." },
                         { name: BEFEHL_4_NAME, description: "Startet Befehl 4." }
