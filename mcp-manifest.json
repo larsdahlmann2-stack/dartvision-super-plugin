@@ -11,9 +11,17 @@
       "command": "powershell.exe",
       "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "src/terminal/run.ps1"]
     },
+    "dartvision-sequential-thinking": {
+      "command": "node",
+      "args": ["src/sequentialthinking/index.js"]
+    },
     "dartvision-network-fetch": {
       "command": "node",
       "args": ["src/fetch/index.js"]
+    },
+    "dartvision-codebase-memory": {
+      "command": "node",
+      "args": ["src/codebase-memory/index.js"]
     }
   }
 }
