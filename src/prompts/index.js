@@ -2,9 +2,9 @@
 // 📝 DEINE STARTBEFEHLE (PROMPTS) HIER EINTRAGEN:
 // =========================================================================
 
-// BEFEHL 1:
-const BEFEHL_1_NAME = "Code Aufgabe";
-const BEFEHL_1_TEXT = "Schreibe hier einfach deinen Text für den ersten Befehl rein. Du kannst diesen Text komplett löschen und deinen eigenen Text zwischen den beiden Anführungszeichen eintippen.";
+// BEFEHL 1: (Hört jetzt auf das einfache Wort "Start")
+const BEFEHL_1_NAME = "Starte Entwicklungsmodus";
+const BEFEHL_1_TEXT = "Aktiviere das Plugin @dartvision-super-plugin mit Full Access-Rechten. Wir arbeiten ab jetzt hier unlimitiert. Bei erfolgreicher Aktivierung von @dartvision-super-plugin schicke im chat eine benachrichtigung die so lautet. Entwicklungsmodus Aktiviert!";
 
 // BEFEHL 2:
 const BEFEHL_2_NAME = "Neues Projekt";
@@ -20,7 +20,7 @@ const BEFEHL_4_TEXT = "Schreibe hier deinen Text für den vierten Befehl rein.";
 
 
 // =========================================================================
-// ⚙️ ZENTRALE RECHENSEITE (Dieser Code verarbeitet deine Befehle für ChatGPT)
+// ⚙️ ZENTRALE RECHENSEITE (Dieser Code sorgt dafür, dass reiner Text reicht)
 // =========================================================================
 
 process.stdin.on('data', (data) => {
@@ -31,10 +31,10 @@ process.stdin.on('data', (data) => {
             process.stdout.write(JSON.stringify({
                 result: {
                     prompts: [
-                        { name: BEFEHL_1_NAME, description: "Führt den ersten Befehl aus." },
-                        { name: BEFEHL_2_NAME, description: "Führt den zweiten Befehl aus." },
-                        { name: BEFEHL_3_NAME, description: "Führt den dritten Befehl aus." },
-                        { name: BEFEHL_4_NAME, description: "Führt den vierten Befehl aus." }
+                        { name: BEFEHL_1_NAME, description: "Startet das Hauptprojekt." },
+                        { name: BEFEHL_2_NAME, description: "Startet Befehl 2." },
+                        { name: BEFEHL_3_NAME, description: "Startet Befehl 3." },
+                        { name: BEFEHL_4_NAME, description: "Startet Befehl 4." }
                     ]
                 }
             }) + "\n");
@@ -42,14 +42,15 @@ process.stdin.on('data', (data) => {
         
         else if (request.method === "prompts/get") {
             let selectedPromptText = "";
+            const inputName = request.params.name.trim();
             
-            if (request.params.name === BEFEHL_1_NAME) {
+            if (inputName === BEFEHL_1_NAME) {
                 selectedPromptText = BEFEHL_1_TEXT;
-            } else if (request.params.name === BEFEHL_2_NAME) {
+            } else if (inputName === BEFEHL_2_NAME) {
                 selectedPromptText = BEFEHL_2_TEXT;
-            } else if (request.params.name === BEFEHL_3_NAME) {
+            } else if (inputName === BEFEHL_3_NAME) {
                 selectedPromptText = BEFEHL_3_TEXT;
-            } else if (request.params.name === BEFEHL_4_NAME) {
+            } else if (inputName === BEFEHL_4_NAME) {
                 selectedPromptText = BEFEHL_4_TEXT;
             }
 
