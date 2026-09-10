@@ -3,8 +3,8 @@
 // =========================================================================
 
 // BEFEHL 1: (Hört jetzt auf das einfache Wort "Start")
-const BEFEHL_1_NAME = "Starte Entwicklungsmodus";
-const BEFEHL_1_TEXT = "Aktiviere das Plugin @dartvision-super-plugin mit Full Access-Rechten. Wir arbeiten ab jetzt hier unlimitiert. Bei erfolgreicher Aktivierung von @dartvision-super-plugin schicke im chat eine benachrichtigung die so lautet. Entwicklungsmodus Aktiviert!";
+const BEFEHL_1_NAME = "Start";
+const BEFEHL_1_TEXT = "Aktiviere das Plugin @dartvision-super-plugin mit Full Access-Rechten. Wir arbeiten ab jetzt hier unlimitiert an der Fertigstellung von DartVision basierend auf der hochgeladenen Entwicklungsauftrag.txt. Nutze Codebase-Memory, um Version 0.6 unter C:\\Users\\larsd\\Documents\\Codex\\2026-09-08\\files-pasted-by-the-user-entwicklungsauftrag zu analysieren. Beginne autonom mit der Fehleranalyse der virtuellen Kameras in Phase 2 und teste das Terminal.";
 
 // BEFEHL 2:
 const BEFEHL_2_NAME = "Neues Projekt";
@@ -31,7 +31,7 @@ process.stdin.on('data', (data) => {
             process.stdout.write(JSON.stringify({
                 result: {
                     prompts: [
-                        { name: BEFEHL_1_NAME, description: "Starte Entwicklungsmodus" },
+                        { name: BEFEHL_1_NAME, description: "Startet das Hauptprojekt." },
                         { name: BEFEHL_2_NAME, description: "Startet Befehl 2." },
                         { name: BEFEHL_3_NAME, description: "Startet Befehl 3." },
                         { name: BEFEHL_4_NAME, description: "Startet Befehl 4." }
